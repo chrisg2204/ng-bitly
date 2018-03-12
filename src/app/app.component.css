@@ -1,0 +1,48 @@
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%  !important;
+} 
+.inner-sidenav-content {
+    overflow: auto;
+    position: top;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: 10px;
+}
+mat-sidenav {
+    background-color: rgba(228, 228, 228, 0.35);
+    color: rgba(0, 0, 0, 0.87);
+    min-width:200px;
+}
+.mat-input-wrapper {
+    width: 500px !important;
+}
+.color-orange {
+    top: -5px;
+    background-color: #e45212;
+    color: #fff;
+}
+
+.url-origin {
+    display: block;
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #444;
+    text-decoration:none;
+}
+
+.url-shorted {
+    color: #9b9b9b;
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+    text-decoration:none;
+    padding-top: 5px;
+}
+

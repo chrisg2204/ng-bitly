@@ -1,0 +1,24 @@
+<div style="position:absolute;top:0;left:0;right:0;bottom:0;">
+  <mat-toolbar color="primary" class="fixed-header">
+      <span>{{Title}}</span>
+
+  </mat-toolbar>
+</div>
+<mat-grid-list cols="1" rowHeight="2:1">
+    <mat-grid-tile cols="3" rows="1" color="lightblue">
+        <mat-form-field class="mat-input-wrapper">
+          <input matInput placeholder="Paste a link to shorten it" [(ngModel)]="Url.origin">
+        </mat-form-field>
+        <button mat-button class="color-orange" (click)="sendForm()">SHORTEN</button>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<div [hidden]="hideLinkShorted">
+    <mat-list>
+        <h3 mat-subheader>Enlace Recortado</h3>
+        <mat-list-item style="background-color: #EEEEEE">
+          <h4 mat-line><a href="http://{{Url.origin}}" class="url-origin">{{Url.origin}}</a></h4>
+          <p mat-line><a href="{{Url.shorted}}" class="url-shorted">{{Url.shorted}}</a></p>
+        </mat-list-item>
+      </mat-list>
+</div>
